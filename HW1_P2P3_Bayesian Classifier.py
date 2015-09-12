@@ -137,3 +137,4 @@ def performance(y_actual, y_hat):
     return (FPR,FNR)
     
 print performance(classlabel,BDecision)
+#(0.021739130434782608, 0.05555555555555555)
