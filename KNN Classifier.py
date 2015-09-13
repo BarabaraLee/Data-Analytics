@@ -74,7 +74,7 @@ for weights in ['uniform', 'distance']:
         elif classlabel[i]==2: plt.plot(point_x[i],point_y[i],'o',c='orange')
 plt.show()
 
-#------------------------------------Bayesian Classifier Performance Analysis
+#------------------------------------KNN Classifier Performance Analysis
 KNNDecisions=map(lambda x: x-1, KNNDecisions)
 classlabel=map(lambda x: x-1, classlabel)
 
