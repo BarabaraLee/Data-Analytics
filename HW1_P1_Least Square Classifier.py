@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from itertools import product
 
-
+#Problem 1
 #------------------------------------Part a
 mean1_5=[1,0]
 mean6_10=[0,1]
@@ -33,7 +33,10 @@ for count in range(100):
 for i in range(100):
     if classlabel[i]==1: plt.plot(point_x[i],point_y[i],'o',c='blue')
     elif classlabel[i]==2: plt.plot(point_x[i],point_y[i],'o',c='orange')
-
+print point_x
+print point_y
+print classlabel
+print subclasslabel
 #------------------------------------Part b
 z=map(lambda x:x-1,classlabel)
 ones=np.ones(100)
@@ -64,7 +67,6 @@ x=map(lambda x:x/10.0,x)
 plt.plot(x,(0.5-beta[0]-x*beta[1])/beta[2],color='black')
 plt.ylim([-3,4])
 plt.show()
-
 
 Decision=map(lambda x: x-1, Decision)
 classlabel=map(lambda x: x-1, classlabel)
